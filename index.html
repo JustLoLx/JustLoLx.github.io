@@ -1,0 +1,16 @@
+<html>
+<head>
+    <title>Light Switch</title>
+</head>
+<body>
+    <img height="200" id="Light" src="bulb-on.png"/> <br />
+    <button onclick=changeImage("bulb-on.png")>LightOn</button>
+    <button onclick=changeImage("bulb-off.png")>LightOff</button>
+    <script>
+        function changeImage(FileName){
+            let img = document.getElementById("Light");
+            img.setAttribute("src", FileName);
+        }
+    </script>
+</body>
+</html>
