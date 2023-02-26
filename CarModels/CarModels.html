@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Try to change "text" color</h2>
+<span style="color:green">Text</span>
+<br>
+<span style="color:aqua">Text</span>
+<br>
+<span style="color:red">Text</span>
+<br>
+<span style="color:yellow">Text</span>
+<p id="demo"></p>
+
+<script>
+const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi", "lexus", "honda", "mercedes"];
+const colors = ["yellow","red","aqua","pink","purple","blue","brown","orange","green"];
+let text = "";
+let i = 0;
+while( i < cars.length) {
+  text += `<span style="color:${colors[(colors.length -1)-i]}"> ${cars[i]} </span> <br>`;
+  i++;  
+}
+
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
