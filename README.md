@@ -1,7 +1,7 @@
 # JustLoLx.github.io
 
 ## Personal portfolio
-### Learning resours link : 
+### Learning resources link : 
 - [W3SchoolsJs](https://www.w3schools.com/js)
 - [W3SchoolsJsQuiz](https://www.w3schools.com/quiztest/quiztest.asp?qtest=JS)
 - [w3schoolsJsExercises](https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_variables1)
