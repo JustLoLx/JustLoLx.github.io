@@ -1,4 +1,4 @@
--# JustLoLx.github.io
+# JustLoLx.github.io
 
 ## Personal portfolio
 
