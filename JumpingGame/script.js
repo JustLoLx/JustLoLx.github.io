@@ -21,8 +21,12 @@ var checkDead = setInterval(function()
 {
     let characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
     let blockLeft =   parseInt(window.getComputedStyle(block).getPropertyValue("left"));
-	//check if collision acures 
-
+	check if collision acures 
+    if(blockLeft<20 && characterTop>=130){
+        character.style.animation = 'none';
+		alert('GameOver');
+		character.style.animation = 'jump 0.4s linear';
+	}
 	
 
 }, 10);
