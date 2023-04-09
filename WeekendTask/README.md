@@ -6,4 +6,4 @@
 
 
 ## You can check and 'WeeklyTask' folder for more solutions
-- [WeekendTask](https://github.com/JustLoLx/JustLoLx.github.io/tree/main/WeeklyTask)
+- [WeeklyTask](https://justlolx.github.io/WeeklyTask/)
