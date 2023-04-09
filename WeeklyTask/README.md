@@ -1,4 +1,8 @@
-# MoveingText in two versions in HTML
+# 'WeeklyTask' solutions with 2 versions of it.
 
-- [Char_in_String](https://justlolx.github.io/WeeklyTask/char_in_string.html)
-- [Same Digits](https://justlolx.github.io/WeeklyTask/Same%20Digits.html)
+- [Var1](https://justlolx.github.io/WeeklyTask/var1.html)
+- [Var2](https://justlolx.github.io/WeeklyTask/var2.html)
+
+
+## You can check and 'WeekendTask' folder for more solutions
+- [WeekendTask](https://github.com/JustLoLx/JustLoLx.github.io/tree/main/WeekendTask)
