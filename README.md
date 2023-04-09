@@ -19,4 +19,5 @@
 | [Car Models](https://justlolx.github.io/CarModels/index.html)| Car model names and difrend colors|
 | [RobotJS](https://JustLoLx.github.io/RobotJs/index.html)| Robot level solution files |
 | [MoveingText](https://justlolx.github.io/MoveingText/)|Moveing text in html with js and css|
-| [WeeklyTask](https://github.com/JustLoLx/JustLoLx.github.io/tree/main/WeeklyTask)|Weekly tasks with solutions|
+| [WeeklyTask](https://justlolx.github.io/WeeklyTask/)|Weekly tasks with solutions|
+| [WeekendTask](https://justlolx.github.io/WeekendTask/)|Weekend tasks with solutions|
