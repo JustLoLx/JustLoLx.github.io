@@ -21,3 +21,4 @@
 | [MoveingText](https://justlolx.github.io/MoveingText/)|Moveing text in html with js and css|
 | [WeeklyTask](https://justlolx.github.io/WeeklyTask/)|Weekly tasks with solutions|
 | [WeekendTask](https://justlolx.github.io/WeekendTask/)|Weekend tasks with solutions|
+| [JumpingGame](https://justlolx.github.io/JumpingGame/)|Simple jumping game|
