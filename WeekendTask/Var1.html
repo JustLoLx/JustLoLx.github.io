@@ -85,25 +85,18 @@ Output
 function SolveIt(s) 
 {
   var r="";
-  var sum = 0;
   var num = s.split("").map(x => x * 1);
   f = true;
-  for(var i = 0;num.length > i; i++)
-  while(sum += num[i]){let dve = f(num[i])} 
+  var sum = num[0];
+  for(var i = 1;num.length > i; i++){
 	sum += num[i];
 	
-	if (num[i]!=num[i-1] && i!=0)
+	if (num[i]!==num[i-1])
       {
         f=false;
-		br;
       }
-    if (num[i]!=num[i])
-      {
-        f=true;
-		br;
-      }
-  return r;)
-	
+	  
+  }return f+" "+sum;
 }
 // ----------- TESTING --------------
 var i, res;
