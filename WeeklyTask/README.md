@@ -1,7 +1,7 @@
 # 'WeeklyTask' solutions with 2 versions of it.
 
-- [Var1](https://justlolx.github.io/WeeklyTask/var1.html)
-- [Var2](https://justlolx.github.io/WeeklyTask/var2.html)
+- [1TaskV1](https://justlolx.github.io/WeeklyTask/var1.html)
+- [1TaskV2](https://justlolx.github.io/WeeklyTask/var2.html)
 
 
 
