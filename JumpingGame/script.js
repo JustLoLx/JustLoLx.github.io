@@ -1,7 +1,7 @@
 var character = document.getElementById("character");
 var block = document.getElementById("block");
 var counter = 0;
-
+const score = document.getElementById('score');
 
 
 function jump()
@@ -17,15 +17,15 @@ function jump()
 	
 }
 
-var checkDead = setInterval(function() 
+var checkDead = setInterval(function()
 {
     let characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
-    let blockLeft =   parseInt(window.getComputedStyle(block).getPropertyValue("left"));
-	check if collision acures 
+    let blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left")); 
     if(blockLeft<20 && characterTop>=130){
-        character.style.animation = 'none';
+      character.style.animation = 'none';
 		alert('GameOver');
 		character.style.animation = 'jump 0.4s linear';
+            score++;
 	}
 	
 
