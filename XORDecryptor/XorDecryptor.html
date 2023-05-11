@@ -1,3 +1,211 @@
-# This is XorDecryptor build for decrypt codes for GoogleMeetings
+<!DOCTYPE html>
+<html>
+<head>
+  <title>XOR Encrypted Link Decrypter </title>
+  <script type="text/javascript">
+    function decryptLink() {
+      const encryptedText = document.getElementById("encrypted-link").value;
+      let res='';
+      let f=0;
+      for (let key=65; key<=122; key++) {
+        res = '';
+        f = 0;
+        for (let j=0; j<encryptedText.length; j++) {
+          let ch = encryptedText.charCodeAt(j);
+          res += String.fromCharCode(ch ^ key);
+        }
+        if (res.includes('https://meet.google.com/')) {
+          document.getElementById("decrypted-link").textContent = res;
+          return;
+        }
+      }
+      alert("Failed to decrypt the link. Please check the encrypted link and try again. ");
+    }
+  </script>
+<style>
+  /* Style for the heading */
+h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-top: 50px;
+}
+h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 60px;
+}
 
-- [HERE](https://JustLoLx.github.io/XORDecryptor/XorDecryptor.html)
+/* Style for the input and button */
+input[type="text"] {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 5px;
+  border: 4px solid #transparent;
+  width: 80%;
+  cursor: pointer;
+  max-width: 500px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out;
+  background-color: transparent;
+}
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 30px;
+  border-radius: 6px;
+  border: 4px solid #transparent;
+  font-size: 18px;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.90);
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #00a384;
+}
+
+button:active {
+  transform: translateY(2px);
+  box-shadow: 0 21 10px rgba(0, 0, 0, 10);
+}
+
+/* Style for the decrypted link */
+#decrypted-link {
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  font-size: 18px;
+  width: 80%;
+  max-width: 500px;
+}
+
+pre{
+  font-family: 'TmonMonsori';
+  top: 0; left: 55;
+  right: 0; bottom: 100;
+  width: 55%; height: 20%;
+  background-color:transparent;
+  font-size: 20px;
+  color: yellow;
+  text-shadow: 0 2px orange, 0 2px transparent, 0 3px red, 0 4px #ccc, 0 5px grey, 0 6px 0 transparent, 0 7px transparent, 0 8px transparent, 0 9px transparent, 0 10px 10px rgba(0, 0, 175, 12);
+}
+.box{
+  position: absolute;
+  top: 0; left: 120;
+  right: 10; bottom: 700;
+  height: 70vh; width: 70vw;
+  display: flex; 
+  
+}
+.box pre{
+  position: relative;
+  top: 20px;
+  display: inline-block;
+  animation: pre 0.3s ease infinite alternate;
+}
+@keyframes pre{
+  100%{
+    top: 20px;
+    text-shadow: 0 1px #ccc, 
+                 0 2px #ccc, 
+                 0 3px #ccc, 
+                 0 4px #ccc, 
+                 0 5px #ccc,
+                 0 6px #ccc, 
+                 0 7px #ccc, 
+                 0 8px #ccc, 
+                 0 9px #ccc, 
+                 0 50px 25px rgba(0, 0, 0, 0.2);
+  }
+}
+.box pre:nth-child(2){
+  animation-delay:0.1s;
+}
+.box pre:nth-child(3){
+  animation-delay:0.2s;
+}
+.box pre:nth-child(4){
+  animation-delay:0.3s;
+}
+.box pre:nth-child(5){
+  animation-delay:0.4s;
+}
+@font-face { font-family: 'TmonMonsori'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff'); font-weight: normal; font-style: normal; }
+.box{
+  position: absolute;
+  top: 0; left: 0;
+  right: 0; bottom: 0;
+  height: 65vh; width: 100vw;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}div{
+  font-family: 'TmonMonsori';
+  position: center;
+  top: 0; left: 0;
+  right: 0; bottom: 0;
+  width: 100%; height: 100%;
+  background-color: transparent;
+  font-size: 40px;
+  color: black;
+  text-shadow: 0 2px black, 0 2px #ccc, 0 2px black, 0 4px #ccc, 0 2px black, 0 4px 0 transparent, 0 4px transparent, 0 4px transparent, 0 9px         transparent, 0 10px 10px rgba(170, 12, 178, 162);
+  animation: bounce 0.3s ease infinite alternate;
+  display: inline-block;
+  top: 20px;
+  position: relative;
+}
+.box span{
+  position: relative;
+  top: 30px;
+  display: inline-block;
+  animation: bounce 0.3s ease infinite alternate;
+}
+@keyframes bounce{
+  100%{
+    top: -20px;
+    text-shadow: 0 6px #ccc, 
+                 0 2px #ccc, 
+                 0 3px #ccc, 
+                 0 4px #ccc, 
+                 0 5px #ccc,
+                 0 6px #ccc, 
+                 0 7px #ccc, 
+                 0 8px #ccc, 
+                 0 9px #ccc, 
+                 0 50px 25px rgba(0, 0, 0, 10);
+  }
+}
+.box span:nth-child(2){
+  animation-delay:0.1s;
+}
+.box span:nth-child(3){
+  animation-delay:0.2s;
+}
+.box span:nth-child(4){
+  animation-delay:0.3s;
+}
+.box span:nth-child(5){
+  animation-delay:0.7s;
+}
+ body{
+ background-color: gray;
+
+}
+</style>
+</head>
+<body>
+  <h1><div>XOR Encrypted Link Decrypter</div></h1>
+  <h2><div>Enter the encrypted link:</h2></div>
+  <input type="text" id="encrypted-link">
+  <button onclick="decryptLink()">DECRYPT</button>
+  <h2><div>Decrypted link:</h2></div>
+ <h1><pre id="decrypted-link"></pre></h1>
+ <h1><div>MADE BY [ JUST_LOLX  ] <div></h1>
+</body>
+</html>
