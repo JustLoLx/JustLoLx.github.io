@@ -1,3 +1,3 @@
 # This is XorDecryptor build for decrypt codes for GoogleMeetings
 
-- [HERE](https://justlolx.github.io/XORDecryptor/XorDecryptor.html)
+- [HERE](JustLoLx.github.io/XOR%20Decryptor/XorDecryptor.htmll)
