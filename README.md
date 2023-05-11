@@ -22,3 +22,4 @@
 | [WeeklyTask](https://justlolx.github.io/WeeklyTask/)|Weekly tasks with solutions|
 | [WeekendTask](https://justlolx.github.io/WeekendTask/)|Weekend tasks with solutions|
 | [JumpingGame](https://justlolx.github.io/JumpingGame/)|Simple jumping game|
+| [XOR Decryptor](https://justlolx.github.io/XORDecryptor/)|Xor decryptor for google meetings|
