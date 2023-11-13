@@ -4,7 +4,7 @@
   <title>XOR Encrypted Link Decrypter </title>
   <script type="text/javascript">
     function decryptLink() {
-      const encryptedText = document.getElementById("encrypted-link").value;
+      const encryptedText = document.getElementById("encrypted-text").value;
       let res='';
       let f=0;
       for (let key=65; key<=122; key++) {
@@ -200,9 +200,9 @@ pre{
 </head>
 <body>
   <h1><div>XOR Encrypted Link Decrypter</div></h1>
-  <h1><div>Enter the encrypted link:</h1></div>
-  <h1><input type="text" id="encrypted-link"></h1>
-  <button onclick="decryptLink()">DECRYPT</button>
+  <h1><div>Enter The Encrypted Text:</h1></div>
+  <h1><input type="text" id="encrypted-text"></h1>
+  <button onclick="decryptLink()">Decrypt</button>
   <h2><div>Decrypted link:</h2></div>
  <h2><pre id="decrypted-link"></pre></h2>
  <h1><div>MADE BY [ JUST_LOLX  ] <div></h1>

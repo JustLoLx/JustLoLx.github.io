@@ -40,14 +40,53 @@
   with, and punctuation inside the sentence is part of the word.
 */
 // @txt - string
-function SolveIt(txt) {
-  const _letters = [("abc")];
+function SolveIt(text) {
+ /* const _letters = [("abc")];
   let _text = "";
   let _i = 0;
   while( _i < _letters.length) {
   _text += [(_letters.length -1)-i];
-  _i++;  
-  return "Txet ni secnetnes gnisrever rof ytilitu desab-resworb tselpmis s'dlrow.";
+  _i++; */
+
+
+ // split the text into sentences
+  let sentences = text.split(/([.?!]+)/);
+  let reversedSentences = [];
+  
+  // iterate over each sentence
+  for (let i = 0; i < sentences.length; i++) {
+    let sentence = sentences[i].trim();
+    if (sentence.length === 0) {
+      continue; // ignore empty sentences
+    }
+    
+    // split the sentence into words
+    let words = sentence.split(/\b/);
+    let reversedWords = [];
+    
+    // iterate over each word
+    for (let j = 0; j < words.length; j++) {
+      let word = words[j];
+      // revert the word's letters
+      let reversedWord = word.split('').reverse().join('');
+      
+      // check if the word starts or ends with a capital letter
+      if (/^[A-Z]/.test(word)) {
+        reversedWord = reversedWord.charAt(0).toUpperCase() + reversedWord.slice(1);
+      }
+      if (/[A-Z]$/.test(word)) {
+        reversedWord = reversedWord.slice(0, -1) + reversedWord.slice(-1).toUpperCase();	
+      }
+      
+      reversedWords.push(reversedWord);
+    }
+    
+    // revert the word order in the sentence and add it to the result
+    reversedSentences.push(reversedWords.reverse().join(''));
+  }
+  
+  // join the reversed sentences into a single string
+  return reversedSentences.join('');
 }
 
 
