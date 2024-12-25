@@ -1,7 +1,7 @@
 # JustLoLx.github.io
 
 ## Personal portfolio
-- [Resume](https://justlolx.github.io/Resume/#readme)
+
 
 
 ### Learning resources link : 
